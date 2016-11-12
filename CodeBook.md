@@ -61,5 +61,5 @@ StageE: Creates a second, independent tidy data set with the average of each var
 
 Step 1: load the dplyr package and use the summarise_each function to calculate mean of each of the variables.
 
-Step 2: Write the final data into the localdrive. Note that the data is pipe delimited i.e. "|" for use in other systems.
+Step 2: Write the final data into the localdrive. 
 
