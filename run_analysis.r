@@ -65,5 +65,5 @@ names(meanAndStdWithActivtityNameData)= gsub("[,()-]","",names(meanAndStdWithAct
 library(dplyr)
 finalData = as.data.frame(meanAndStdWithActivtityNameData %>% group_by(activityId,subjectId) %>% summarise_each(funs(mean(.,na.rm=TRUE)),-(subjectId+activityId)))
 
-#step 2: Write the final data into the localdrive. Note that the data is pipe delimited i.e. "|" for use in other systems.
-write.table(finalData,"FinalExersiseData.txt",row.names = FALSE,sep = "|")
+#step 2: Write the final data into the localdrive. 
+write.table(finalData,"FinalExersiseData.txt",row.names = FALSE)
